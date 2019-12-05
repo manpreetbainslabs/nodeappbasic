@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+<section id="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="login-form">
+          <% if (userdata) { %>
+            <% userdata.forEach(function(user){ %>
+              <p>Logged In as <%= user.name %> user.</p>
+            <% })%>   
+          <% } %>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-4">
+          <img src="/img/userdummy.png">
+        </div>
+        <div class="col-md-8">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% include ../partials/footer %>
+
